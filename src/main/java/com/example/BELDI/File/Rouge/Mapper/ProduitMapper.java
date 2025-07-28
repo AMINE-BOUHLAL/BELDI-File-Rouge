@@ -7,10 +7,14 @@ import org.mapstruct.Mapper;
 import java.util.List;
 
 
+import org.mapstruct.Mapping;
+
 @Mapper(componentModel = "spring",uses = {ProduitMapper.class})
 public interface ProduitMapper {
 
+    @Mapping(source = "statut", target = "statu")
     ProduitDTO ToDto(Produit produit);
+    @Mapping(source = "statu", target = "statut")
     Produit toEntity(ProduitDTO produitDTO);
     List<ProduitDTO> ToDto(List<Produit> produits);
 

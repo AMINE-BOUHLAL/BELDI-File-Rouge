@@ -4,7 +4,7 @@ import com.example.BELDI.File.Rouge.DTO.ProduitDTO;
 import com.example.BELDI.File.Rouge.Mapper.ProduitMapper;
 import com.example.BELDI.File.Rouge.Repository.ProduitRepository;
 import com.example.BELDI.File.Rouge.model.Produit;
-import lombok.AllArgsConstructor;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
